@@ -178,7 +178,6 @@ input[type=submit]:hover {
     min-height: calc(100vh - 400px);
 }
 .portfolio {
-    margin-bottom: 60px;
     min-height: calc(100vh - 400px); 
 }
 .contact {

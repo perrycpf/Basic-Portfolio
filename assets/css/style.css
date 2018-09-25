@@ -88,20 +88,18 @@ footer {
     background-color:#666666;
     padding-top: 25px;
     height: 25px;
+    border-top: solid;
+    border-top-color:#4aaaa5;
+    border-top-width: 10px;
 }
 .main-background {
     background-image: url('../images/background.jpg');
     background-repeat:no-repeat;
-    border-top: solid;
-    border-top-color: #dddddd;
-    border-bottom: solid;
-    border-bottom-color:#4aaaa5;
-    border-bottom-width: 10px;
-    min-height: calc(600px - 70px);
+    height: 100%;
+    padding-top: 30px;
 }
 .main-page {
     position:relative;
-    margin-top: 30px;
     margin-bottom: 80px;
     background-color: #ffffff;
 }
@@ -176,27 +174,13 @@ input[type=submit]:hover {
     width: 250px;
     font-family:Times,"Times New Roman",serif; 
 }
-@media only screen and (min-height: 500px) {
-    .about-me {
-        min-height: calc(400px - 70px);
-    }
-    .portfolio {
-        margin-bottom: 60px;
-        min-height: calc(400px - 70px); 
-    }
-    .contact {
-        min-height: calc(400px - 70px); 
-    }
+.about-me {
+    min-height: calc(100vh - 400px);
 }
-@media only screen and (min-height: 900px) {
-    .about-me {
-        min-height: calc(600px - 70px);
-    }
-    .portfolio {
-        margin-bottom: 60px;
-        min-height: calc(600px - 70px); 
-    }
-    .contact {
-        min-height: calc(600px - 70px); 
-    }
-} 
+.portfolio {
+    margin-bottom: 60px;
+    min-height: calc(100vh - 400px); 
+}
+.contact {
+    min-height: calc(100vh - 400px); 
+}
